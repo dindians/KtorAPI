@@ -34,12 +34,12 @@ fun Application.module() {
 	}
 
 	routing {
-		// http://127.0.0.1:8080
+		// http://127.0.0.1:8080 or http://localhost:8080
 		get("/") {
 			call.respondText("HELLO WORLD!", contentType = ContentType.Text.Plain)
 		}
 
-		// http://127.0.0.1:8080/json/jackson
+		// http://127.0.0.1:8080/json/jackson or http://localhost:8080/json/jackson
 		get("/json/jackson") {
 			call.respond(mapOf("hello" to "world"))
 		}
